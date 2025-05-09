@@ -79,6 +79,16 @@ This approach allows fast matching against text or visual queries without a live
 
 ---
 
+## Decisions
+
+- I used FastAPI for the backend because it's fast, easy to work with and great for building clean APIs.
+- For understanding text messages from users, I used the Zephyr-7B model through Hugging Face—it gives good responses and doesn't require running heavy models locally.
+- To handle image-based product search, I went with the CLIP model, which is really good at finding visual similarities between what the user uploads and what’s in the product list.
+- For matching user queries with product info, I used SentenceTransformer—it gives quick and accurate results.
+- On the frontend, I picked React along with Material UI to keep the interface simple, clean, and responsive. Everything was set up in a way that would let users chat naturally, upload product images, and get       smart suggestions easily
+
+---
+
 ## Deployment Note
 
 This project was initially attempted to be deployed using Render’s free tier. However, due to heavy model dependencies and memory usage (CLIP + SentenceTransformer + Hugging Face LLM), a higher compute plan is required. The deployment was paused due to these constraints.
