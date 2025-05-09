@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Nike Air Zoom Pegasus 39",
+    "category": "shoes",
+    "tags": ["running", "sports", "men"],
+    "price": 129.99,
+    "image": "/images/nike-pegasus-39.jpg",
+    "description": "Lightweight and responsive running shoes for daily training."
+  },
+  {
+    "id": "2",
+    "title": "Adidas Dri-FIT Training T-shirt",
+    "category": "apparel",
+    "tags": ["t-shirt", "training", "men", "sportswear"],
+    "price": 35.00,
+    "image": "/images/adidas-training-tee.jpg",
+    "description": "Breathable performance t-shirt ideal for workouts and sports."
+  },
+  {
+    "id": "3",
+    "title": "Apple Watch Series 9",
+    "category": "electronics",
+    "tags": ["smartwatch", "wearable", "tech"],
+    "price": 399.00,
+    "image": "/images/apple-watch-series9.jpg",
+    "description": "Advanced health and fitness tracking smartwatch with retina display."
+  },
+  {
+    "id": "4",
+    "title": "Herschel Supply Co. Backpack",
+    "category": "accessories",
+    "tags": ["bag", "backpack", "travel", "unisex"],
+    "price": 89.99,
+    "image": "/images/herschel-backpack.jpg",
+    "description": "Classic backpack with modern functionality and minimalist design."
+  },
+  {
+    "id": "5",
+    "title": "Sony WH-1000XM5 Noise Canceling Headphones",
+    "category": "electronics",
+    "tags": ["headphones", "audio", "music", "tech"],
+    "price": 349.99,
+    "image": "/images/sony-xm5.jpg",
+    "description": "Industry-leading noise canceling headphones with superb sound quality."
+  }
+]
