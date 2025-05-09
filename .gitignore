@@ -13,6 +13,8 @@ Thumbs.db
 
 *.log
 
+!backend/frontend_build/**
+
 bag.jpg
 s1.jpg
 s2.jpg

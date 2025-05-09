@@ -33,7 +33,7 @@ app.add_middleware(
 # Ensuring static image directory exists for serving product images
 os.makedirs("images", exist_ok=True)
 app.mount("/images", StaticFiles(directory="images"), name="images")
-app.mount("/", StaticFiles(directory="frontend/chatui/build", html=True), name="frontend")
+app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
 
 
 with open("products.json", "r") as f:
