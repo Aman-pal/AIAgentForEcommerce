@@ -1,14 +1,10 @@
 
-frontend/chatui/node_modules/
-
 backend/venv/
 
 **/__pycache__/
 **/*.py[cod]
 
 **/.env
-
-frontend/chatui/build/
 
 .vscode/
 
