@@ -33,7 +33,7 @@ app.add_middleware(
 # Ensuring static image directory exists for serving product images
 os.makedirs("images", exist_ok=True)
 app.mount("/images", StaticFiles(directory="images"), name="images")
-app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
+# app.mount("/", StaticFiles(directory="frontend_build", html=True), name="frontend")
 
 
 with open("products.json", "r") as f:
@@ -137,7 +137,7 @@ Palona:"""
         return "Sorry, I couldn't connect to my assistant right now. Please try again later."
 
 
-@app.post("/api/chat")
+@app.post("/api/chat",tags=["AI Agent"], summary="Chat with Palona AI")
 def chat(req: ChatRequest):
     query = req.message
     category = extract_category_from_query(query)
@@ -165,7 +165,7 @@ def chat(req: ChatRequest):
         "products": []
     }
 
-@app.post("/api/image-search")
+@app.post("/api/image-search",tags=["AI Agent"], summary="Search products using an image")
 async def image_search(
     file: UploadFile = File(...),
     message: Optional[str] = Form(None)
